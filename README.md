@@ -1,6 +1,9 @@
-# Seasonal Color Classifier (timm Models Edition)
+# Seasonal Color Classifier
 
-This project implements a 12-class seasonal color analysis classifier specialized for face images, using state-of-the-art models via the timm library.
+![Seasonal Colour Analysis](https://global-uploads.webflow.com/5eca30fd2b50b671e2107b06/5ed7d77496e25e2f36128df1_Seasonal%20Colour%20Analysis%20-%20Twelve%20Seasons%20Colour%20Analysis%204.png)
+_Image credit: [The Concept Wardrobe](https://theconceptwardrobe.com/colour-analysis-comprehensive-guides/what-is-color-analysis)_
+
+This project implements a 12-class seasonal color analysis classifier specialized for face images, using state-of-the-art models via the timm library. It is an ongoing struggle on finding a model architecture that will fit the Deep Armocromia Dataset and might one day be the basis for a reliable armocromia classification app.
 
 ## Project Structure
 
@@ -20,7 +23,7 @@ This project implements a 12-class seasonal color analysis classifier specialize
 
 The following timm model keys are supported (if you pass a partial key, it may be automatically completed):
 - hgnetv2_b5.ssld_stage2_ft_in1k
-- vit_base_patch16_clip_224.openai_ft_in12k_in1k (pass "vit_base_patch16_clip_224" to auto-complete)
+- vit_base_patch16_clip_224.openai_ft_in12k_in1k
 - tf_efficientnetv2_l.in21k_ft_in1k
 - hgnetv2_b5.ssld_stage1_in22k_in1k
 - hgnet_base.ssld_in1k
@@ -52,3 +55,13 @@ The model is instantiated via timm with pretrained weights (if enabled) and its 
    ```
 5. Monitor your Neptune dashboard for training parameters, plots, and checkpoints.
 
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- **PyTorch & Torchvision**: For providing deep learning frameworks and pre-trained models.
+- **NumPy, Matplotlib, Seaborn, Scikit-Learn**: For data manipulation and visualization.
+- **TQDM**: For progress bar integration during training.
+- Special thanks to lorenzo-stacchio for the creation of this dataset.
