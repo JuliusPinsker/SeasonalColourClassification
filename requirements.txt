@@ -1,0 +1,13 @@
+torch
+torchvision
+numpy
+matplotlib
+seaborn
+scikit-learn
+tqdm
+Pillow
+neptune-client
+optuna
+plotly
+kaleido
+timm
